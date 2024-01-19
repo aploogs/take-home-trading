@@ -10,7 +10,7 @@ import Ticker from "../ticker";
 const Home: React.FC = () => {
   // max width 1880 due to image constraints
   return (
-    <Box width={1880}>
+    <Box maxWidth={1980}>
       <Grid pt={1} container spacing={4}>
         <Grid item lg={12}>
           <NavBar />

@@ -132,13 +132,19 @@ const Ticker: React.FC = () => {
   };
 
   return (
-    <Grid container justifyContent="center" spacing={4} margin={2}>
+    <Grid
+      container
+      display="flex"
+      justifyContent="flex-start"
+      spacing={2}
+      margin={2}
+    >
       <Grid sx={{ color: "white" }} item mt={4} mr={10} mb={2} lg={12}>
         <Typography display="flex" justifyContent="center" variant="h4">
           Stocks at close!
         </Typography>
       </Grid>
-      <Grid item lg={6} mr={5}>
+      <Grid item lg={11}>
         <Typography sx={{ color: "white" }}>
           Here you can actually choose which stock you would like to query. Due
           to API limitations, please limit queries to prices from the previous 2
@@ -146,10 +152,10 @@ const Ticker: React.FC = () => {
           minute, make them count!
         </Typography>
       </Grid>
-      <Grid item lg={7}>
+      <Grid item xs={6} md={4} ml={4.5}>
         <CustomDatePicker value={datefnsDate} onChange={handleDateChange} />
       </Grid>
-      <Grid item mb={2} lg={7}>
+      <Grid item mb={2} xs={6} md={10}>
         <StockRow
           handleInputChange={handleInputChange}
           symbol={symbol.stock1}
@@ -157,7 +163,7 @@ const Ticker: React.FC = () => {
           closePrice={finalClosePrice}
         />
       </Grid>
-      <Grid item mb={2} lg={7}>
+      <Grid item mb={2} xs={6} md={10}>
         <StockRow
           handleInputChange={handleInputChange}
           symbol={symbol.stock2}
@@ -165,7 +171,7 @@ const Ticker: React.FC = () => {
           closePrice={finalClosePrice2}
         />
       </Grid>
-      <Grid item mb={2} lg={7}>
+      <Grid item mb={2} xs={6} md={10} mr={20}>
         <StockRow
           handleInputChange={handleInputChange}
           symbol={symbol.stock3}
@@ -173,7 +179,7 @@ const Ticker: React.FC = () => {
           closePrice={finalClosePrice3}
         />
       </Grid>
-      <Grid item lg={7}>
+      <Grid item md={4}>
         <Button
           sx={{ background: "#16A8BE" }}
           variant="contained"

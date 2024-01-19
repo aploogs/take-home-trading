@@ -77,7 +77,7 @@ const RootCalculator: React.FC = () => {
                 Square roots to precision
               </Typography>
             </Grid>
-            <Grid item lg={2} ml={15} sm={8}>
+            <Grid item lg={2} sm={8}>
               <TextField
                 label="Enter a number"
                 variant="filled"
