@@ -68,7 +68,7 @@ export const Calculator: React.FC = () => {
           />
         </Grid>
         <Grid item xs={12} md={2}>
-          <FormControl sx={{ maxWidth: 170 }} fullWidth>
+          <FormControl sx={{ maxWidth: 190 }} fullWidth>
             <InputLabel>Precision?</InputLabel>
             <Select
               placeholder="Precision?"
@@ -92,7 +92,7 @@ export const Calculator: React.FC = () => {
             </FormHelperText>
           </FormControl>
         </Grid>
-        <Grid item xs={12} md={2} mr={20}>
+        <Grid item xs={11} md={5}>
           <Typography
             sx={{
               marginLeft: "12px",
