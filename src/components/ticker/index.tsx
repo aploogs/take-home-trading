@@ -140,11 +140,11 @@ const Ticker: React.FC = () => {
       margin={2}
     >
       <Grid sx={{ color: "white" }} item mt={4} mr={10} mb={4} lg={12}>
-        <Typography display="flex" justifyContent="center" variant="h4">
+        <Typography ml={4} mr={1} variant="h4">
           Stocks at close!
         </Typography>
       </Grid>
-      <Grid item lg={11}>
+      <Grid item xs={10} lg={10}>
         <Typography sx={{ color: "white" }}>
           Here you can actually choose which stock you would like to query. Due
           to API limitations, please limit queries to prices from the previous 2
@@ -152,10 +152,10 @@ const Ticker: React.FC = () => {
           minute, make them count!
         </Typography>
       </Grid>
-      <Grid item xs={8} md={4} mb={2} ml={4.5}>
+      <Grid item xs={6} md={4} mb={2}>
         <CustomDatePicker value={datefnsDate} onChange={handleDateChange} />
       </Grid>
-      <Grid item mb={2} xs={6} md={10}>
+      <Grid item mb={2} xs={6} md={10} mr={4}>
         <StockRow
           handleInputChange={handleInputChange}
           symbol={symbol.stock1}
