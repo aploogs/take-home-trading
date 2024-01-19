@@ -139,7 +139,7 @@ const Ticker: React.FC = () => {
       spacing={2}
       margin={2}
     >
-      <Grid sx={{ color: "white" }} item mt={4} mr={10} mb={2} lg={12}>
+      <Grid sx={{ color: "white" }} item mt={4} mr={10} mb={4} lg={12}>
         <Typography display="flex" justifyContent="center" variant="h4">
           Stocks at close!
         </Typography>
@@ -152,7 +152,7 @@ const Ticker: React.FC = () => {
           minute, make them count!
         </Typography>
       </Grid>
-      <Grid item xs={6} md={4} ml={4.5}>
+      <Grid item xs={8} md={4} mb={2} ml={4.5}>
         <CustomDatePicker value={datefnsDate} onChange={handleDateChange} />
       </Grid>
       <Grid item mb={2} xs={6} md={10}>

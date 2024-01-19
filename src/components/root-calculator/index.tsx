@@ -59,7 +59,7 @@ const RootCalculator: React.FC = () => {
       <Box>
         <form>
           <Grid container spacing={2} flexDirection="row">
-            <Grid sx={{ color: "white" }} item mt={10} mb={25} lg={12}>
+            <Grid sx={{ color: "white" }} item mt={15} mb={20} lg={12}>
               <Typography variant="h4">Square roots to precision</Typography>
             </Grid>
             <Grid item xs={6} md={2}></Grid>
@@ -103,7 +103,7 @@ const RootCalculator: React.FC = () => {
                 sx={{
                   marginLeft: "12px",
                   marginTop: "12px",
-                  fontSize: "20px",
+                  fontSize: "26px",
                   fontWeight: 600,
                 }}
               >

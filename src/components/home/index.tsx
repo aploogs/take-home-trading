@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   // max width 1880 due to image constraints
   return (
     <Box>
-      <Grid pt={1} container spacing={4}>
+      <Grid pt={1} container spacing={2}>
         <Grid item lg={12}>
           <NavBar />
         </Grid>
