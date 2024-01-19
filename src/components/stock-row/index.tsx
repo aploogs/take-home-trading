@@ -18,7 +18,7 @@ const StockRow: React.FC<StockRowProps> = ({
 
   return (
     <Grid container>
-      <Grid item sm={5} lg={5}>
+      <Grid item xs={11} sm={5} lg={5}>
         <TextField
           onChange={handleInputChange}
           name={name}
@@ -34,7 +34,7 @@ const StockRow: React.FC<StockRowProps> = ({
           value={symbol}
         />
       </Grid>
-      <Grid item sm={2} lg={2}>
+      <Grid item xs={1} sm={2} lg={2}>
         <Typography sx={{ color: "green", fontSize: 28, fontWeight: 600 }}>
           {closePrice}
         </Typography>

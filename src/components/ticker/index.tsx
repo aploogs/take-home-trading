@@ -139,7 +139,7 @@ const Ticker: React.FC = () => {
       spacing={2}
       margin={2}
     >
-      <Grid sx={{ color: "white" }} item mt={4} mr={10} mb={4} lg={12}>
+      <Grid sx={{ color: "white" }} item mt={4} sm={12} mr={10} mb={4} lg={12}>
         <Typography ml={4} mr={1} variant="h4">
           Stocks at close!
         </Typography>
@@ -152,10 +152,10 @@ const Ticker: React.FC = () => {
           minute, make them count!
         </Typography>
       </Grid>
-      <Grid item xs={6} md={4} mb={2}>
+      <Grid item xs={6} md={4} mb={2} sm={12}>
         <CustomDatePicker value={datefnsDate} onChange={handleDateChange} />
       </Grid>
-      <Grid item mb={2} xs={6} md={10} mr={4}>
+      <Grid item mb={2} xs={6} sm={12} md={10}>
         <StockRow
           handleInputChange={handleInputChange}
           symbol={symbol.stock1}
@@ -163,7 +163,7 @@ const Ticker: React.FC = () => {
           closePrice={finalClosePrice}
         />
       </Grid>
-      <Grid item mb={2} xs={6} md={10}>
+      <Grid item mb={2} xs={6} sm={12} md={10}>
         <StockRow
           handleInputChange={handleInputChange}
           symbol={symbol.stock2}
@@ -171,7 +171,7 @@ const Ticker: React.FC = () => {
           closePrice={finalClosePrice2}
         />
       </Grid>
-      <Grid item mb={2} xs={6} md={10} mr={20}>
+      <Grid item mb={2} xs={6} sm={12} md={10}>
         <StockRow
           handleInputChange={handleInputChange}
           symbol={symbol.stock3}
@@ -179,7 +179,7 @@ const Ticker: React.FC = () => {
           closePrice={finalClosePrice3}
         />
       </Grid>
-      <Grid item md={4}>
+      <Grid item sm={12} md={4}>
         <Button
           sx={{ background: "#16A8BE" }}
           variant="contained"
