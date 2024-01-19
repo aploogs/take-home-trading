@@ -58,26 +58,12 @@ const RootCalculator: React.FC = () => {
     <>
       <Box>
         <form>
-          <Grid
-            justifyContent="center"
-            container
-            spacing={2}
-            flexDirection="row"
-          >
-            <Grid
-              justifyContent="center"
-              display="flex"
-              sx={{ color: "white" }}
-              item
-              mt={10}
-              mb={25}
-              lg={12}
-            >
-              <Typography justifyContent="center" variant="h4">
-                Square roots to precision
-              </Typography>
+          <Grid container spacing={2} flexDirection="row">
+            <Grid sx={{ color: "white" }} item mt={10} mb={25} lg={12}>
+              <Typography variant="h4">Square roots to precision</Typography>
             </Grid>
-            <Grid item lg={2} sm={8}>
+            <Grid item xs={6} md={2}></Grid>
+            <Grid item xs={6} ml={4} md={3}>
               <TextField
                 label="Enter a number"
                 variant="filled"
@@ -87,7 +73,7 @@ const RootCalculator: React.FC = () => {
                 onChange={handleInputChange}
               />
             </Grid>
-            <Grid item lg={2} sm={3}>
+            <Grid item xs={6} md={2}>
               <FormControl sx={{ maxWidth: 170 }} fullWidth>
                 <InputLabel>Precision?</InputLabel>
                 <Select
@@ -113,6 +99,18 @@ const RootCalculator: React.FC = () => {
               </FormControl>
             </Grid>
             <Grid item sm={2}>
+              <Typography
+                sx={{
+                  marginLeft: "12px",
+                  marginTop: "12px",
+                  fontSize: "20px",
+                  fontWeight: 600,
+                }}
+              >
+                {result}
+              </Typography>
+            </Grid>
+            <Grid item sm={7}>
               <Button
                 variant="contained"
                 sx={{ backgroundColor: "#16A8BE", marginBottom: "8px" }}
@@ -125,7 +123,6 @@ const RootCalculator: React.FC = () => {
               >
                 Calculate
               </Button>
-              <Typography sx={{ marginLeft: "12px" }}>{result}</Typography>
             </Grid>
           </Grid>
         </form>
