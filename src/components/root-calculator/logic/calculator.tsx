@@ -54,7 +54,6 @@ export const Calculator: React.FC = () => {
     return x;
   };
 
-  console.log("precision", precisionValue);
   return (
     <Box mt={20} justifyContent="center">
       <Grid container spacing={2}>
@@ -68,7 +67,7 @@ export const Calculator: React.FC = () => {
             onChange={handleInputChange}
           />
         </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={2}>
           <FormControl sx={{ maxWidth: 170 }} fullWidth>
             <InputLabel>Precision?</InputLabel>
             <Select
@@ -93,7 +92,7 @@ export const Calculator: React.FC = () => {
             </FormHelperText>
           </FormControl>
         </Grid>
-        <Grid item xs={12} sm={2}>
+        <Grid item xs={12} md={2} mr={20}>
           <Typography
             sx={{
               marginLeft: "12px",

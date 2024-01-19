@@ -5,12 +5,12 @@ import { Calculator } from "./logic/calculator";
 const RootCalculator: React.FC = () => {
   return (
     <>
-      <Box mt={15} justifyContent="center">
+      <Box mt={15} ml={1}>
         <Grid container spacing={2}>
-          <Grid sx={{ color: "white" }} item mb={5} lg={12}>
+          <Grid sx={{ color: "white" }} item mb={4} lg={12}>
             <Typography variant="h4">Square roots to precision</Typography>
           </Grid>
-          <Grid item justifyContent="center" xs={12}>
+          <Grid item ml={4} xs={12}>
             <Calculator />
           </Grid>
         </Grid>
