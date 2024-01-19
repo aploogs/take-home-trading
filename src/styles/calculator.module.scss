@@ -1,0 +1,25 @@
+.calculatorInput {
+   background-color: white;
+   border-radius: 5px;
+   ::after {
+    border: none;
+   }
+}
+
+.InputLabel {
+   background-color: white;
+}
+
+.MuiInputLabel-root.Mui-focused:focus {
+   background-color: blue;
+   color: white;
+   border-radius: 5px;
+   ::after {
+    border: none;
+   }
+}
+
+.helperText {
+  color: white;
+  padding-top: 6px;
+}
